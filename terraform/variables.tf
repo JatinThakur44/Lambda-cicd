@@ -5,7 +5,7 @@ variable "aws_region" {
 }
 
 variable "lambda_function_name" {
-  description = "Lambda function nname"
+  description = "Lambda function nnakme"
   type        = string
   default     = "my-simple-lambda"
 }
