@@ -72,7 +72,7 @@ resource "aws_lambda_function" "main" {
 }
 
 # CloudWatch Log Group
-resource "aws_cloudwatch_log_group" "lambda_logs" {
+resource "aws_cloudwatch_log_group" "lambda_logs1" {
   name              = "/aws/lambda/${var.lambda_function_name}"
   retention_in_days = 7
 
