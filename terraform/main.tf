@@ -55,7 +55,7 @@ resource "aws_lambda_function" "main" {
   
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256
   
-  runtime = "nodejs18.x"  # or "python3.11"
+  runtime = "python3.11"  # "nodejs18.x"  
   timeout = 30
   memory_size = 128
 
