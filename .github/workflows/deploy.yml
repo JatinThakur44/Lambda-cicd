@@ -19,14 +19,8 @@ jobs:
 
     - uses: hashicorp/setup-terraform@v2
 
-    - name: Cache Terraform providers
-      uses: actions/cache@v3
-      with:
-        path: ~/.terraform.d/plugin-cache
-        key: ${{ runner.os }}-terraform-${{ hashFiles('**/*.tf') }}
-
-    - name: Deploy
+    - name: Terraform Init & Plan
       run: |
         cd terraform
-        terraform init -plugin-dir ~/.terraform.d/plugin-cache
+        terraform init
         terraform plan
