@@ -15,7 +15,7 @@ variable "environment" {
   type        = string
   default     = "dev"
 }
-
+/*
 variable "access_key"{
   description = "access key"
   type        = string
@@ -24,4 +24,4 @@ variable "access_key"{
 variable "secret_key"{
   description = "secret key"
   type        = string
-}
+}*/
