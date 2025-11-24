@@ -67,7 +67,7 @@ resource "aws_lambda_function" "main" {
 
   tags = {
     Environment = var.environment
-    ManagedBy   = "Terraformm"
+    ManagedBy   = "Terraform"
   }
 }
 
